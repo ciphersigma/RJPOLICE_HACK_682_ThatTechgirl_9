@@ -1,0 +1,72 @@
+/* Your existing CSS styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-section {
+    flex: 1; /* Take remaining space */
+    background-color: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.button {
+    background-color: #58a6ff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px; /* Add space between FAQ section and the button */
+}
+
+.button:hover {
+    background-color: #005cc5;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Additional style for bold questions */
+.faq-item .question {
+    font-weight: bold;
+}
+
+/* Your existing styles */
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2em; /* Increase the font size of the question */
+    position: relative;
+    padding-left: 20px; /* Add space for the arrow */
+}
+
+.question::before {
+    content: '\25B6'; /* Unicode character for right-pointing arrow */
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
+}
+
+.answer {
+    display: none;
+    font-size: 1em; /* Set font size for the answer */
+}

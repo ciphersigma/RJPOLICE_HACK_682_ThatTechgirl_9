@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Status - Cyber Guardian</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Added CSS styles for button container */
+        .button-container {
+            display: flex;
+            gap: 10px; /* Adjust the gap as needed */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Check Status</h1>
+    </header>
+    <main>
+        <section class="tracking-form">
+            <form id="checkStatusForm">
+                <label for="checkComplaintId">Complaint ID:</label>
+                <input type="text" id="checkComplaintId" name="checkComplaintId" required>
+
+                <div class="button-container">
+                    <button type="button" onclick="checkProgress()">Check Progress</button>
+
+                    <!-- Add buttons to connect to other pages -->
+                    <button type="button" class="button" onclick="goBack()">Back to Home</button>
+                </div>
+            </form>
+
+            <div id="progressStages" class="progress-stages"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cyber Guardian. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="check-status.js"></script>
+    <script>
+        // Add the checkProgress and updateProgressStages functions here
+        function checkProgress() {
+            const complaintId = document.getElementById('checkComplaintId').value;
+
+            // Simulate fetching progress stages from the server
+            const stages = ['Complaint Submission', 'Complaint Verification', 'Complaint Approval', 'Court Case', 'Work in Progress', 'Issue Resolved'];
+
+            updateProgressStages(stages);
+        }
+
+        function updateProgressStages(stages) {
+            const progressStages = document.getElementById('progressStages');
+            progressStages.innerHTML = '';
+
+            stages.forEach((stage, index) => {
+                const stageElement = document.createElement('div');
+                stageElement.classList.add('progress-stage', 'animated', 'fadeIn', `delay-${index}s`);
+                stageElement.innerHTML = `<h3>${stage}</h3>`;
+                progressStages.appendChild(stageElement);
+            });
+        }
+    </script>
+</body>
+</html>

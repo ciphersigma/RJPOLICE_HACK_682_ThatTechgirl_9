@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+    </header>
+    <main>
+        <section id="postForm">
+            <h2>Create a Post</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="postContent">Post Content:</label>
+            <textarea id="postContent" rows="4" required></textarea>
+
+            <button onclick="submitPost()">Submit Post</button>
+            <button type="button" class="button" onclick="goBack()">Back to Home</button>
+
+        </section>
+
+        <section id="posts">
+            <h2>Community Posts</h2>
+            <div id="postContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cyber Guardian. All rights reserved.</p>
+    </footer>
+    <script src="forum.js"></script>
+</body>
+</html>

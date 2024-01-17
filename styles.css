@@ -1,0 +1,473 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #15202B;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+}
+
+header {
+    background-color: #0d1117;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #58a6ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0d1117;
+    transition: transform 0.5s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #58a6ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005cc5;
+}
+
+footer {
+    background-color: #0d1117;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+/* Your existing styles */
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Additional styling for icons */
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Add more styles as needed */
+/* Existing styles */
+
+header h1 {
+    margin-bottom: 20px; /* Add margin-bottom to create space below the title */
+}
+
+/* Additional styles for icons */
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Additional styling for icons and other elements */
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Add more styles as needed */body {
+    font-family: Arial, sans-serif;
+    background-color: #15202B;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+}
+
+header {
+    background-color: #0d1117;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #58a6ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0d1117;
+    transition: transform 0.5s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #58a6ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005cc5;
+}
+
+footer {
+    background-color: #0d1117;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+/* Your existing styles */
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Additional styling for icons */
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Add more styles as needed */
+/* Existing styles */
+
+header h1 {
+    margin-bottom: 20px; /* Add margin-bottom to create space below the title */
+}
+
+/* Additional styles for icons */
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Additional styling for icons and other elements */
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Add more styles as needed */body {
+    font-family: Arial, sans-serif;
+    background-color: #15202B;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+}
+
+header {
+    background-color: #0d1117;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #58a6ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0d1117;
+    transition: transform 0.5s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #58a6ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005cc5;
+}
+
+footer {
+    background-color: #0d1117;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+/* Your existing styles */
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Additional styling for icons */
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Add more styles as needed */
+/* Existing styles */
+
+header h1 {
+    margin-bottom: 20px; /* Add margin-bottom to create space below the title */
+}
+
+/* Additional styles for icons */
+
+nav a i {
+    margin-right: 5px;
+}
+
+/* Additional styling for icons and other elements */
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Add more styles as needed */
+
+/* Global Styles */
+body {
+    background-color: #00274E;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #58a6ff; /* Matching the color in index.html */
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Make inputs fill the width */
+}
+
+button {
+    background-color: #009688;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00796B;
+}
+
+/* Additional Styles */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.complaint-id-form {
+    flex: 1;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d1117;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}

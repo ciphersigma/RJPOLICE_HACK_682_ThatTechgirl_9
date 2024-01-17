@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defreezing Funds Tracker - Cyber Guardian</title>
+    <link rel="stylesheet" href="track-funds.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Defreezing Funds Tracker</h1>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Tracking Form Section -->
+        <section class="tracking-form">
+            <form id="defreezingForm">
+                <label for="complaintId">Complaint ID:</label>
+                <input type="text" id="complaintId" name="complaintId" required>
+
+                <label for="noc">No Objection Certificate (NOC):</label>
+                <input type="file" id="noc" name="noc" accept=".pdf" required>
+
+                <button type="button" onclick="submitDefreezingRequest()">Submit Request</button>
+            </form>
+        </section>
+
+        <!-- Progress Tracking Section -->
+        <section id="progressSection" class="progress-section">
+            <form id="complaintIdForm">
+                <label for="complaintId">Complaint ID:</label>
+                <input type="text" id="complaintId" name="complaintId" required>
+                <button type="button" onclick="checkProgress()">Check Progress</button>
+            </form>
+        
+            <div id="progressStages" class="progress-stages">
+                <!-- Stages will be dynamically updated here -->
+            </div>
+        </section>
+
+        <!-- Button Group Section -->
+        <div class="button-group">
+            <form id="checkStatusForm">
+                <label for="checkComplaintId">Complaint ID:</label>
+                <input type="text" id="checkComplaintId" name="checkComplaintId" required>
+                <button type="button" onclick="trackFunds()">Track Funds</button>
+            </form>
+        </div>
+
+        <!-- Back to Home Button -->
+        <button type="button" class="button" onclick="goBack()">Back to Home</button>
+
+        <!-- Status Display Section -->
+        <div id="statusDisplay"></div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Cyber Guardian. All rights reserved.</p>
+    </footer>
+
+    <!-- Script Section -->
+    <script src="script.js"></script>
+</body>
+</html>

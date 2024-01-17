@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Guardian Report Form</title>
+    <link rel="stylesheet" href="report-styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Cyber Guardian Report Form</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <form id="reportForm" action="https://script.google.com/macros/s/AKfycbylLSRB2XLinL5rq0H7iAHvWIO_N-pVESLsL6L6yTW1Qdf7PLUmEWLyAvTbFXvdZgjP/exec" method="post" onsubmit="submitForm(event)">
+      <label for="userName">Your Name:</label>
+      <input type="text" id="userName" name="userName" required>
+      
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="text" id="mobileNumber" name="mobileNumber" pattern="[0-9]+" title="Please enter only numeric values" minlength="10" required>
+      
+      <label for="crimeType">Crime Type:</label>
+      <select id="crimeType" name="crimeType" required>
+        <option value="" disabled selected>Select Crime Type</option>
+        <option value="phishing">Phishing</option>
+        <option value="fraud">Fraud</option>
+        <option value="ransomware">Ransomware</option>
+        <option value="malware">Malware</option>
+        <option value="identity-theft">Identity Theft</option>
+      </select>
+
+      <!-- Add a line break for better visibility -->
+      <br>
+      
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+      
+      <button class="button" type="submit">Submit Report</button>
+      <button type="button" class="button" onclick="goBack()">Back to Home</button>
+    </form>
+    
+    <!-- The modal for the thank-you message -->
+    <div id="thankYouModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Thank you, <span id="modalUserName"></span>, for your report!</p>
+        <p>Your Complaint ID: <span id="modalComplaintId"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="report.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
